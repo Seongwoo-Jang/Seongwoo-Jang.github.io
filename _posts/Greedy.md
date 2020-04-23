@@ -1,0 +1,34 @@
+---
+layout: single
+title:  그리디 알고리즘의 조사
+date:   2020-04-23 04:19:43 +0900
+categories: jekyll update
+
+---
+
+# 그리디 알고리즘이란
+
+"매 선택에서 **지금 이 순간 당장 최적인 답**을 선택하여 결과를 도출하자"라는 모토를 가지는 알고리즘 설계 기법이다.
+
+그리디 알고리즘의 예제로는 동전 지불의 예시가 있다.
+
+
+
+# ㅁㄴㅇ 
+
+코드는 다음과 같다
+
+![](https://postfiles.pstatic.net/MjAyMDA0MjNfMjIy/MDAxNTg3NTgzNjgyMTE3.hY9l8zwSC6JQRvXcenntHbnQIc1AugIl6UKGYznrLiAg.0cajb7qa7f1wwoirlOHLVuONz83doXz0TPsN0VDRcEgg.JPEG.zhalrtjddn2/%EC%BA%A1%EC%B2%98.JPG?type=w966) 
+
+
+
+min_calc 함수는 현재 금액에서 각각의 동전을 뺐을 때 가장 적은 금액이 남는 경우를 반환하는 함수이다.
+
+
+
+사용되는 변수는 coin(동전의 종류)와 value(지불해아 하는 금액), dic (동전의 종류별로 얼마나 사용되는지)로 총 3가지 변수를 사용합니다.
+
+
+
+while loop 문은 min_calc를 실행 한 뒤 남은 금액들 모두 0보다 작아지기 전까지 실행하는 함수이다. 실행되는 동안에는 뺀 동전에 대한 value 값을 1씩 증가시키는 기능을 수행한다.
+
